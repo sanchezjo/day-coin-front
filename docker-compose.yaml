@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+    front-coin-api:
+        container_name: day-coin-front
+        build: .
+        ports:
+        -   4200:4200
+        volumes:
+        -   ./:/usr/app/
